@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="481967424668409">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="289874940534540" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="302632440917506">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="294862207687340" type="Cursor">
+                            <param id="0" name="Instance variable">OpcaoSelecionada</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="403828606873786" type="Cursor">
+                            <param id="0" name="Instance variable">OpcaoSelecionada</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="658121359921232">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="449070255802268" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="327771711377770">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="249711165666232" type="Cursor">
+                            <param id="0" name="Instance variable">OpcaoSelecionada</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="678715251102539" type="Cursor">
+                            <param id="0" name="Instance variable">OpcaoSelecionada</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="414858337741069">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="223525798039255" type="OpcaoMenu">
+                    <param id="0" name="Instance variable">opcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Cursor.opcaoSelecionada</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="949555196298337" type="Cursor">
+                    <param id="0" name="Y">OpcaoMenu.Y</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="121160852968715" type="OpcaoMenu">
+                    <param id="0" name="Effect">&quot;Brightness&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="113804523768736">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="141654833969214" type="OpcaoMenu">
+                    <param id="0" name="Instance variable">opcao</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">Cursor.opcaoSelecionada</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="307365160532586" type="OpcaoMenu">
+                    <param id="0" name="Effect">&quot;Brightness&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="719904139455997">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="954321773860271" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="247921280800568">
+                    <conditions>
+                        <condition id="-33" name="Pick by comparison" sid="553833005655057" type="System">
+                            <param id="0" name="Object">OpcaoMenu</param>
+                            <param id="1" name="Expression">OpcaoMenu.opcao</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">Cursor.opcaoSelecionada</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="467069304948772">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="142555985318672" type="OpcaoMenu">
+                                    <param id="0" name="Instance variable">acao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;New&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="543002760197229" type="OpcaoMenu">
+                                    <param id="0" name="Instance variable">acao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Load&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="189690251004092" type="OpcaoMenu">
+                                    <param id="0" name="Instance variable">acao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Opitions&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="123950213558406" type="OpcaoMenu">
+                                    <param id="0" name="Instance variable">acao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Next&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="976423230108929" type="Fundo" />
+                                <action id="-23" name="Move at angle" sid="620571084282232" type="Fundo">
+                                    <param id="0" name="Angle">70</param>
+                                    <param id="1" name="Distance">1</param>
+                                </action>
+                                <action id="10" name="Load image from URL" sid="689716319135863" type="Fundo">
+                                    <param id="0" name="URI">&quot;https://img.quizur.com/f/img643b07be0f4ba3.67829163.jpg?lastEdited=1681590229&quot;</param>
+                                    <param id="1" name="Size">0</param>
+                                    <param id="2" name="Cross-origin">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="521294432774399" type="Fundo">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
